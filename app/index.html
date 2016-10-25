@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+	
+<!--  must have for tarotreader5.js to function!-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" type="text/javascript"></script>
 </head>
 <body>
   <ul class="menu">
@@ -39,5 +43,8 @@
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+	
+<!--  must have for tarotreader5.js to function (even though it is 'hard-wired' into view1.js as a function). WHY?-->
+  <script src="./view1/tarotreader5.js"></script>
 </body>
 </html>

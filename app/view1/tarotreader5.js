@@ -1,17 +1,4 @@
-'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
-
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
-  });
-}])
-
-.controller('View1Ctrl', [function() {
-	
-	
 
 
 //var $, cardHeight, cardName, cardWidth, gridSize, serialNumber, cardDescription;
@@ -315,7 +302,7 @@ $(document).ready(function() {
     
   $("#turnCards").click(function() {
     var cardStr;
-    cardStr = 'The following descriptions are taken from ' + '<i>The Pictorial Key to the Tarot</i>' +', by Arthur Waite:';
+    cardStr = 'shtdslkfjdslldskfj';
     $("#spreadArea").children(".droppable").each(function() {
       var url;
       if ($("#spreadArea").data('cardMeaningSet')) {
@@ -326,7 +313,7 @@ $(document).ready(function() {
           $(this).data('cardMeaning', $(this).children('span:first').text());
         }
           
-        var card_descr = $(this).data("card");
+        card_descr = $(this).data("card");
           
         if ($(this).data("reversed") === 1) {
             
@@ -372,7 +359,7 @@ $(document).ready(function() {
       
     
       
-    return $("#dialogTurnCardsResult").html("<p>#dialogTurnCardsResult>>>：</p><p>" + cardStr + "</p>").dialog('open');
+    return $("#dialogTurnCardsResult").html("<p>#dialogTurnCardsResultxxxx：</p><p>" + cardStr + "</p>").dialog('open');
       
     
   });
@@ -397,6 +384,3 @@ $(document).ready(function() {
   });
 });
 
-
-
-}]);
